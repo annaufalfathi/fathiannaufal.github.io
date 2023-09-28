@@ -124,7 +124,9 @@
 
   .button_class{
     display: flex;
-    width: 25rem;
+    width: 18.75rem;
+    min-width: 12.5rem;
+    max-width: 18.75rem;
     padding: 2.25rem 0rem;
     justify-content: center;
     align-items: center;
@@ -229,3 +231,30 @@
     width: 72px;
     height: 72px;
   }
+
+
+
+
+
+  /* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #1B262C;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 16px;
+}
