@@ -99,14 +99,14 @@
     gap: 10px;
     align-self: stretch;
 
-    background-image: url('Agate_Background.png');
+    background-image: url('Assets/Agate_Background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   #info_personal_project{
-    background-image: url('My_Little_Plant_Background.png');
+    background-image: url('Assets/My_Little_Plant_Background.png');
   }
 
   .info_content_container{
@@ -176,11 +176,9 @@
 
   .navigation_link{
     display: flex;
-    width: 473px;
-    padding: 0px 24px;
+    padding: 0rem 3rem;
     align-items: flex-start;
-    gap: 64px;
-    flex-shrink: 0;
+    gap: 4rem;
   }
 
   .button{
@@ -239,7 +237,7 @@
     align-self: stretch;
   }
 
-  img{
+  .icon{
     width: 72px;
     height: 72px;
   }
@@ -270,4 +268,31 @@
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 16px;
+}
+
+
+/* About me Page*/
+.aboutme_text{
+  display: flex;
+  padding: 5.625rem 10rem;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.aboutme_text_container{
+  display: flex;
+  padding-right: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1 0 0;
+}
+
+#speaker_dnw_talks{
+  background-image: url("Assets/ITalks_Background.png");
+}
+
+#speaker_italks{
+  background-image: url("Assets/ITalks_Background.png");
 }
