@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="Style.css">
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <script defer src="script.js"></script>
     </head>
     <body>
         <header class="header" id="myHeader">
@@ -17,32 +18,13 @@
                 </ul>
             </nav>
         </header>
-        <script>
-            // When the user scrolls the page, execute myFunction
-            window.onscroll = function() {myFunction()};
-
-            // Get the header
-            var header = document.getElementById("myHeader");
-
-            // Get the offset position of the navbar
-            var sticky = header.offsetTop;
-
-            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
-                }
-            }
-         </script>
-        <div class="introduction_text" id="introduction_id">
+        <div class="introduction_text hidden" id="introduction_id">
             <h1 class="text">Hi, I am Fathi</h1>
             <p class="text">A <span>Game System Design and Economic Designer</span></p>
         </div>
         <div class="list_content" id="list_what_i_bring_to_team">
-            <h1 class="text_list_content"> What I bring to Teams</h1>
-            <div class="icon_list_content">
+            <h1 class="text_list_content hidden"> What I bring to Teams</h1>
+            <div class="icon_list_content hidden">
                 <div class="icon_items">
                     <img src="Icons/icon-Ideation.png">
                     <a>Ideation</a>
@@ -66,15 +48,15 @@
             </div>
         </div>
         <div class="info_content" id="info_work_at_agate">
-            <div Class="info_content_container">
+            <div Class="info_content_container hidden">
                 <h1 class="text_info_content">Junior Game Designer at Agate International</h1>
                 <p class="text_info_content">As Junior Game Designer, I Create system design for our game then Balancing the game Economy to make sure our game is fun enough.</p>
                     <button class="button_class" ><a href="https://annaufalfathi.itch.io" class="link_content_text">See More</a></button> 
             </div>
         </div>
         <div class="list_content" id="list_tools_i_use">
-            <h1 class="text_list_content"> Tools I Use</h1>
-            <div class="icon_list_content">
+            <h1 class="text_list_content hidden"> Tools I Use</h1>
+            <div class="icon_list_content hidden">
                 <div class="icon_items">
                     <img src="Icons/icon-Unity.png">
                     <a>Unity</a>
@@ -98,7 +80,7 @@
             </div>
         </div>
         <div class="info_content" id="info_personal_project">
-            <div Class="info_content_container">
+            <div Class="info_content_container hidden">
                 <h1 class="text_info_content">Game Designer and Programmer at Personal Project</h1>
                 <p class="text_info_content">Act as Lead Project, Game Designer, and Programmer. this project is for game jam.</p>
                     <button class="button_class" ><a href="https://annaufalfathi.itch.io" class="link_content_text">See More</a></button> 

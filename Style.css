@@ -90,6 +90,8 @@
     align-items: flex-start;
   }
 
+
+
   
 
   .info_content{
@@ -159,6 +161,20 @@
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+  }
+
+  .hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(10%);
+    transition: all 1s;
+
+  }
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+
   }
 
   .navigation_link{
@@ -240,6 +256,7 @@
 .header {
   padding: 10px 16px;
   background: #1B262C;
+  z-index: 1;
 }
 
 /* Page content */
