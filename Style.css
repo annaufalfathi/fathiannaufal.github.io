@@ -5,11 +5,11 @@
   }
   
   :root {
-    --wp--preset--font-size--small: 2rem;
-    --wp--preset--font-size--medium: 2.5rem;
-    --wp--preset--font-size--normal: 3rem;
-    --wp--preset--font-size--huge: 3.5rem;
-    --wp--preset--font-size--large: 3rem;
+    --wp--preset--font-size--small: 1rem;
+    --wp--preset--font-size--medium: 1.25rem;
+    --wp--preset--font-size--normal: 1.5rem;
+    --wp--preset--font-size--huge: 2rem;
+    --wp--preset--font-size--large: 32.25rem;
   }
 
 
@@ -17,7 +17,7 @@
     margin: 0;
   }
   body {
-    background-color: #1B262C;
+    background-color: #071340;
     margin: 0;
     color: white;
   }
@@ -122,18 +122,17 @@
   }
 
   .button_class{
-    display: flex;
-    width: 18.75rem;
+    display: inline-flex;
     min-width: 12.5rem;
     max-width: 18.75rem;
-    padding: 1rem 0rem;
-    justify-content: space-between;
+    padding: 0.5rem 0rem;
     align-items: center;
+    gap: 0.25rem;
 
 
     border-radius: 1.25rem;
     border: 2px solid #000;
-    background: #3282B8;
+    background: #213372;
   }
 
 
@@ -176,9 +175,9 @@
 
   .navigation_link{
     display: flex;
-    padding: 0rem 3rem;
+    padding: 0rem 2.25rem;
     align-items: flex-start;
-    gap: 4rem;
+    gap: 1rem;
   }
 
   .button{
@@ -195,7 +194,7 @@
     align-items: flex-start;
     gap: 24px;
     align-self: stretch;
-    background: #3282B8;
+    background: #213372;
   }
 
   .text_list_content{
@@ -227,7 +226,7 @@
     gap: 1rem;
     align-self: stretch;
 
-    background: #3282B8;
+    background: #213372;
   }
 
   .contact_link{
@@ -249,7 +248,7 @@
   /* Style the header */
 .header {
   padding: 10px 16px;
-  background: #1B262C;
+  background: #213372;
   z-index: 1;
 }
 
