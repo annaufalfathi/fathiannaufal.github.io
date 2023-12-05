@@ -9,7 +9,10 @@
     --wp--preset--font-size--medium: 1.25rem;
     --wp--preset--font-size--normal: 1.5rem;
     --wp--preset--font-size--huge: 2rem;
-    --wp--preset--font-size--large: 32.25rem;
+    --wp--preset--font-size--large: 2.125rem;
+    --blue: #071340;
+    --lightblue: #213372;
+    --bluesky: #3282B8;
   }
 
 
@@ -17,7 +20,7 @@
     margin: 0;
   }
   body {
-    background-color: #071340;
+    background-color: var(--blue);
     margin: 0;
     color: white;
   }
@@ -46,17 +49,26 @@
     line-height: inherit;
   }
 
-  a{
+  p{
     font-size: var(--wp--preset--font-size--small);
     /* Text S/Regular */
     font-family: Inter;
     font-style: normal;
-    font-weight: 400;
-    line-height: 1.75rem; /* 87.5% */
-    letter-spacing: -0.04rem;
+    font-weight: 500;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: -0.011rem;
   }
-  p,li{
-    font-size: var(--wp--preset--font-size--small);
+  a{
+    font-size: var(--wp--preset--font-size--medium);
+    /* Text M S/Medium */
+    font-family: Inter;  
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 120% */
+    letter-spacing: -0.015rem;
+  }
+  li{
+    font-size: var(--wp--preset--font-size--normal);
     /* Text S/Regular */
     font-family: Inter;
     font-style: normal;
@@ -69,7 +81,7 @@
     cursor: pointer;
   }
   h1{
-    font-size: var(--wp--preset--font-size--normal);
+    font-size: var(--wp--preset--font-size--large);
     /* Text M/Medium */
     font-family: Inter;
     font-style: normal;
@@ -78,6 +90,22 @@
     letter-spacing: -0.075rem;
 
     color: #BBE1FA;
+  }
+  h2{
+    font-size: var(--wp--preset--font-size--huge);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem; /* 87.5% */
+    letter-spacing: -0.04rem;
+  }
+  h3{
+    font-size: var(--wp--preset--font-size--normal);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5625rem; /* 104.167% */
+    letter-spacing: -0.0195rem;
   }
   .introduction_text{
     display: flex;
@@ -123,16 +151,16 @@
 
   .button_class{
     display: inline-flex;
-    min-width: 12.5rem;
+    min-width: 9.375rem;
     max-width: 18.75rem;
     padding: 0.5rem 0rem;
     align-items: center;
     gap: 0.25rem;
 
 
-    border-radius: 1.25rem;
-    border: 2px solid #000;
-    background: #213372;
+    border-radius: 0.25rem;
+    border: 1px solid #000;
+    background: var(--bluesky);
   }
 
 
@@ -194,7 +222,7 @@
     align-items: flex-start;
     gap: 24px;
     align-self: stretch;
-    background: #213372;
+    background: var(--lightblue);
   }
 
   .text_list_content{
@@ -226,7 +254,7 @@
     gap: 1rem;
     align-self: stretch;
 
-    background: #213372;
+    background: var(--lightblue);
   }
 
   .contact_link{
@@ -241,57 +269,61 @@
     height: 72px;
   }
 
-
-
-
-
-  /* Style the header */
-.header {
+    /* Style the header */
+  .header {
   padding: 10px 16px;
-  background: #213372;
+  background: var(--blue);
   z-index: 1;
-}
+  } 
 
-/* Page content */
-.content {
-  padding: 16px;
-}
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 16px;
-}
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 16px;
+  }
 
 
-/* About me Page*/
-.aboutme_text{
-  display: flex;
-  padding: 5.625rem 10rem;
-  align-items: flex-start;
-  gap: 2rem;
-  align-self: stretch;
-}
+  /* About me Page*/
+  .aboutme_text{
+    display: flex;
+    padding: 5.625rem 10rem;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+  }
 
-.aboutme_text_container{
-  display: flex;
-  padding-right: 0px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.25rem;
-  flex: 1 0 0;
-}
+  .aboutme_text_container{
+    display: flex;
+    padding-right: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex: 1 0 0;
+  }
 
-#speaker_dnw_talks{
-  background-image: url("Assets/DNW_Background.png");
-}
+  #speaker_dnw_talks{
+    background-image: url("Assets/DNW_Background.png");
+  }
 
-#speaker_italks{
-  background-image: url("Assets/ITalks_Background.png");
-}
+  #speaker_italks{
+    background-image: url("Assets/ITalks_Background.png");
+  }
+
+  @media only screen and (max-width: 600px) {
+    .contact_link{
+      height: 13.25rem;
+      padding: 3rem 1rem;
+      flex-direction: column;
+    }
+  }
